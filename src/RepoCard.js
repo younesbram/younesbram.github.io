@@ -27,7 +27,7 @@ const RepoCard = ({ repo }) => {
         )}
         {repo.stargazers_count > 0 && (
           <p className='stars'>
-            {repo.stargazers_count} <span role='img' aria-label='star'>⭐</span>
+            Stars: {repo.stargazers_count} <span role='img' aria-label='star'>⭐</span>
           </p>
         )}
         {repo.topics && repo.topics.length > 0 && (

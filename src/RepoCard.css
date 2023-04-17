@@ -8,13 +8,13 @@
 }
 
 .website-link {
-  color: #add8e6;
+  color: #2272ce;
   text-decoration: none;
   transition: all 0.3s;
 }
 
 .website-link:hover {
-  color: #32cd32;
+  color: #ff0000;
   transform: scale(1.05);
 }
 
