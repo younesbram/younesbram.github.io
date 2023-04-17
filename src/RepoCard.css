@@ -1,0 +1,42 @@
+.repo-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.website {
+  position: relative;
+}
+
+.website-link {
+  color: #add8e6;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.website-link:hover {
+  color: #32cd32;
+  transform: scale(1.05);
+}
+
+.stars {
+  margin-top: 0.5rem;
+}
+
+.topics {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5rem 0;
+}
+
+.topic-bubble {
+  background-color: #0366d6;
+  border-radius: 16px;
+  color: #fff;
+  font-size: 0.8rem;
+  margin: 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.topic-bubble:hover {
+  background-color: #024ea1;
+}
