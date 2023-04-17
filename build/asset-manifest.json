@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/gitgrep/static/css/main.84589c59.css",
+    "main.js": "/gitgrep/static/js/main.3ce20c50.js",
+    "index.html": "/gitgrep/index.html",
+    "main.84589c59.css.map": "/gitgrep/static/css/main.84589c59.css.map",
+    "main.3ce20c50.js.map": "/gitgrep/static/js/main.3ce20c50.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84589c59.css",
+    "static/js/main.3ce20c50.js"
+  ]
+}
