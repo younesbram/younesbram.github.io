@@ -14,12 +14,12 @@ code {
 }
 
 .repo-title {
-  color: #b4b4b4;
+  color: #e2e2e2;
   text-decoration: none;
 }
 
 .repo-title:hover {
-  color: #cccccc;
+  color: #41d823;
 }
 
 
@@ -79,10 +79,16 @@ code {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 0.25rem;
   padding: 0.5rem;
+  transition: transform 0.3s ease;
 }
 
 .pagination button:hover {
   background-color: #f2f2f2;
+  transform: scale(1.1);
+}
+
+.pagination button:active {
+  transform: rotate(360deg) scale(0.9);
 }
 
 .pagination button:focus {

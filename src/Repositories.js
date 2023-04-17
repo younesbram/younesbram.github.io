@@ -12,6 +12,7 @@ const Repositories = () => {
     const [reposPerPage, setReposPerPage] = useState(9);
     const [searchTerm, setSearchTerm] = useState('');
     const [pageTransition, setPageTransition] = useState(false);
+    const [sortDirection, setSortDirection] = useState('desc');
 
     useEffect(() => {
         const fetchRepos = async () => {
@@ -32,7 +33,14 @@ const Repositories = () => {
                         return { ...repo, topics: topics.data.names };
                     })
                 );
-                setRepos(reposWithTopics);
+                const sortedRepos = reposWithTopics.sort((a, b) => {
+                  if (sortDirection === 'asc') {
+                    return a.stargazers_count - b.stargazers_count;
+                  } else {
+                    return b.stargazers_count - a.stargazers_count;
+                  }
+                });
+                setRepos(sortedRepos);
                 setLoading(false);
             } catch (error) {
                 setError(error.message);
@@ -40,7 +48,8 @@ const Repositories = () => {
             }
         };
         fetchRepos();
-    }, []);
+    }, [sortDirection]);
+    
 
     const indexOfLastRepo = currentPage * reposPerPage;
     const indexOfFirstRepo = indexOfLastRepo - reposPerPage;
